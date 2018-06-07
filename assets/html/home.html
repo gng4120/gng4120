@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/venue-list.css">
+
+  <title>Event Planning</title>
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">
+              We are a company dedicated to letting people connected with each other.
+            </p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white">Follow on Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Like on Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Email me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+          <strong>Event Planning</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <section class="jumbotron text-center text-white">
+      <div class="container">
+        <h1 class="jumbotron-heading">Venues for eating</h1>
+        <p class="lead">Here are some featured venues for your fellows to eat out, having fun.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row" id="venue-cards-container">
+          <!-- React renders here. -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="root"></div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>&copy; Event Planning Inc, 2018</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script type="text/babel">
+    const venueList = [{
+      id: 1,
+      img: '/img/1.jpg'
+    }, {
+      id: 2,
+      img: '/img/2.jpg'
+    }, {
+      id: 3,
+      img: '/img/3.jpg'
+    }, {
+      id: 4,
+      img: '/img/4.jpg'
+    }, {
+      id: 5,
+      img: '/img/5.jpg'
+    }, {
+      id: 6,
+      img: '/img/6.jpg'
+    }];
+
+    const VenueCard = ({ venue }) => {
+      return (
+        <div className="col-md-4">
+          <div className="card mb-4 box-shadow">
+            <div className="card-img-top">
+              <img className="venue-thumb-img" src={venue.img} alt="Card image cap" />
+            </div>
+            <div className="card-body">
+              <p className="card-text venue-thumb-description">
+                This is a wider card with supporting text below as a natural lead-in to additional content. 
+                This contentis a little bit longer.
+              </p>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small className="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    const VenueCardList = ({ venueList }) => {
+      return venueList.map(venue => <VenueCard venue={venue} key={venue.id} />)
+    };
+
+    const Root = () => <VenueCardList venueList={venueList} />;
+
+    ReactDOM.render(
+      <Root />,
+      document.getElementById('venue-cards-container')
+    );
+  </script>
+</body>
+</html>
