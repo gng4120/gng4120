@@ -58,3 +58,35 @@ footer p {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.navbar_sign {
+
+  list-style-type: none;
+  position: relative;
+  left: 30%;
+  
+}
+.search_form {
+     
+  position: relative;
+  left: 22%;  
+  margin-top: 12%;
+           
+}
+
+.search_button {
+
+   border-color:rgb(255, 255, 255);
+  
+   
+}
+.font_color{
+
+  color: rgb(94, 139, 223);
+}
+
+.email_item {
+
+  right: 50%;
+
+}
