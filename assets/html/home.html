@@ -210,7 +210,9 @@
         <div className="col-md-4">
           <div className="card mb-4 box-shadow">
             <div className="card-img-top">
-              <img className="venue-thumb-img" src={venue.img} alt="Card image cap" />
+              <a href={`/html/venue.html?venueId=${venue.id}`}>
+                <img className="venue-thumb-img" src={venue.img} alt="venue thumbnail" />
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text venue-thumb-description">
