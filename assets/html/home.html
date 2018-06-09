@@ -186,24 +186,37 @@
   <script type="text/babel">
     const venueList = [{
       id: 1,
-      img: '/img/1.jpg'
+      venue_name: "Ottawa Dinner Club",
+      img: '/img/1.jpg',
+      information: "Whether you are a foodie at heart or just want to try new restaurants and meet new people; all are welcome."
       
     }, {
       id: 2,
-      img: '/img/2.jpg'
+      venue_name: "Ottawa Veg*n Meetup Group",
+      img: '/img/2.jpg',
+      information: "The Table Vegetarian Restaurant is located at the corner of Holland and Wellington."
     }, {
       id: 3,
-      img: '/img/3.jpg'
+      venue_name: "Ottawa's Fun Group",
+      img: '/img/3.jpg',
+      information: "Activities can be ranging from dinners, drinks, special theme parties, activities such as painting, dancing, wine tastings."
     }, {
       id: 4,
-      img: '/img/4.jpg'
+      venue_name: "Bite of Asia",
+      img: '/img/4.jpg',
+      information: "Are you new to Ottawa? Looking to meet people who share the same passion as you in FOOD?"
     }, {
       id: 5,
-      img: '/img/5.jpg'
+      venue_name: "Hop Heads: Ottawa Beer Tasting Meetup",
+      img: '/img/5.jpg',
+      information: "This group would meet once every month to taste a flight of choice local and or international beers."
     }, {
       id: 6,
-      img: '/img/6.jpg'
+      venue_name: "Ottawa Eat, Dance & Mingle Under 45",
+      img: '/img/6.jpg',
+      information: "In our events, we will encourage everyone who attends to briefly introduce themselves to other members."
     }];
+
 
     const VenueCard = ({ venue }) => {
       return (
@@ -214,8 +227,7 @@
             </div>
             <div className="card-body">
               <p className="card-text venue-thumb-description">
-                This is a wider card with supporting text below as a natural lead-in to additional content. 
-                This contentis a little bit longer.
+                {venue.information}
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
