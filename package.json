@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/serve/bin/serve.js -l 3010 ./assets",
+    "start": "./node_modules/serve/bin/serve.js -p 3010 ./assets",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "serve": "^8.1.0"
+    "serve": "^6.5.8"
   }
 }
