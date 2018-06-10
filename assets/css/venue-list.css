@@ -90,3 +90,31 @@ footer p {
   right: 50%;
 
 }
+
+.bg_pic1 {
+
+
+  background-image: url("/img/event6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.bg_pic2 {
+
+  background-image: url("/img/event55.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.bg_pic3 {
+
+  background-image: url("/img/event7.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
