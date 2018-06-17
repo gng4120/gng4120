@@ -21,3 +21,4 @@ Go to [Home page](http://localhost:3010) (http://localhost:3010).
 cd assets
 
 node server.js
+

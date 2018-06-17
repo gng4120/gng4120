@@ -4,19 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "./node_modules/serve/bin/serve.js -p 3010 ./assets",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
-=======
-    "start": "./node_modules/serve/bin/serve.js -l 3010 ./assets",
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> f4c10940d854c3dcee0abc6af408111a7c50f16b
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongodb": "^3.0.10",
@@ -24,8 +18,5 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-=======
-    "serve": "^8.1.2"
->>>>>>> f4c10940d854c3dcee0abc6af408111a7c50f16b
   }
 }

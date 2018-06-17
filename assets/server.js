@@ -48,7 +48,13 @@ MongoClient.connect('mongodb://host:uottawa666@ds263640.mlab.com:63640/the_host'
 app.get('/', (req,res) => {
 
     res.sendFile(__dirname + '/html/sign_up.html')
+});
+
+app.get('/home', (req,res)=>{
+
+    res.sendFile(__dirname + '/html/home.html')
 })
+
 
 /**
  *  Perform and handle a CREATE operation via a post method,
@@ -63,7 +69,7 @@ app.post('/info', (req,res) => {
 
         if (err) return console.log(err)
         console.log('saved to database')
-        res.redirect('/')
+        res.redirect('/home');
     })
     console.log(req.body)
 
