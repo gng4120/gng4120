@@ -14,3 +14,10 @@ npm start
 ```
 
 Go to [Home page](http://localhost:3010) (http://localhost:3010).
+
+
+# To start the new server.
+
+cd assets
+
+node server.js
